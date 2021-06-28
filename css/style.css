@@ -5,6 +5,25 @@
 }
 
 
+/* / common / */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.active {
+    color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: #1172ed;
+}
+
+/* /common */
+
 /* Header */
 
 header {
@@ -31,6 +50,11 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+    padding-right: 30px;
+}
+
+.account {
+    margin-left: 10px;
 }
 
 .link {
@@ -48,6 +72,81 @@ main {
     align-items: center;
     width: 100%;
     height: calc(100vh - 100px);
+}
+
+.content-left,
+.content-right {
+    display: flex;
+    width: 25%;
+    height: 50%;
+}
+
+.content-left {
+    flex-wrap: wrap;
+}
+
+
+.content-right {
+    width: 40%;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+
+}
+
+.btn {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.btn i {
+    margin: auto;
+    font-size: 40px;
+}
+
+#first::after {
+    content: '\f078';
+    font-weight: 900;
+    font-size: 0.6em;
+    font-family: "Font Awesome 5 Free";
+    margin-left: 5px;
+}
+
+
+.box {
+    width: 50%;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/sfondo.png');
+    background-size: cover;
+    height: 30%;
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
 }
 /* Fine Main */
 
@@ -68,15 +167,21 @@ main {
 }
 
 .debug .content-left {
-    width: 200px;
-    height: 400px;
     background-color: yellow;
 }
 
 .debug .content-right {
-    width: 200px;
     height: 400px;
     background-color: green;
 }
 
+.debug .box .top {
+    width: 100%;
+    background-color: lightpink;
+}
+
+.debug .box .bottom {
+    width: 100%;
+    background-color: lightyellow;
+}
 /* Fine Debug */ 

@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Zoom Intro</title>
 </head>
-<body class="debug">
+<body class="">
     <header>
         <div class="nav-main">
-            <div class="link">
+            <div class="link active">
                 <i class="fas fa-home"></i>
                 <p>Home</p>
             </div>
             <div class="link">
-                <i class="fas fa-home"></i>
-                <p>Home</p>
+                <i class="far fa-comment"></i>
+                <p>Chattare</p>
             </div>
             <div class="link">
-                <i class="fas fa-home"></i>
-                <p>Home</p>
+                <i class="far fa-clock"></i>
+                <p>Riunioni</p>
             </div>
             <div class="link">
-                <i class="fas fa-home"></i>
-                <p>Home</p>
+                <i class="far fa-address-book"></i>
+                <p>Contatti</p>
             </div>
         </div>
         <div class="nav-right">
@@ -40,10 +43,41 @@
 
     <main>
         <div class="content-left">
-
+            <div class="item">
+                <div class="btn orange">
+                    <i class="fas fa-video"></i>
+                </div>
+                <p id="first">Nuova Riunione</p>
+            </div>
+            <div class="item">
+                <div class="btn blue">
+                    <i class="far fa-plus-square"></i>
+                </div>
+                <p>Nuova Riunione</p>
+            </div>
+            <div class="item">
+                <div class="btn blue">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <p>Nuova Riunione</p>
+            </div>
+            <div class="item">
+                <div class="btn blue">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <p>Nuova Riunione</p>
+            </div>
         </div>
         <div class="content-right">
-
+            <div class="box">
+                <div class="top">
+                    <h2>7:17</h2>
+                    <p>Lunedì 28 Giugno 2021</p>
+                </div>
+                <div class="bottom">
+                    <p>Nessuna prossima riunione per oggi</p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
